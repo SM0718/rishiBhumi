@@ -31,7 +31,7 @@ function UserInfo() {
                     if(currentSession) {
                         const customerData = await appwriteService.createUserInfo({...data, phone: currentSession.phone, address:address, userId: currentSession.$id})
                             if(customerData) {
-                            window.location.reload()
+                            //window.location.reload()
                         }
                     }
         } catch (error) {
@@ -57,7 +57,7 @@ function UserInfo() {
 
     useEffect(() => {
         getPosts()
-    }, [])
+    })
 
     const deleteDetail = async(postId) => {
         setError("")
