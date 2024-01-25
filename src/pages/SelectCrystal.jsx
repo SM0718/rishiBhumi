@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import {crystalDetails} from '../infos/crystals'
 import Button from '../components/Button';
 
@@ -29,6 +29,14 @@ function SelectCrystal() {
       Book Now for Rs {product[0].crystalPrice}
     </Button>
   </span>
+              <span>
+                <p>
+                  <b>
+                    Want to know your Gotra or Raashi?, Contact Us on
+                  </b>
+                        <Link className='text-green-500 bg-green-200 rounded-lg mx-1 px-1' to={`whatsapp://send?phone=+919330032500&text=For%20Gotra%20and%20Raashi!`}>Whatsapp</Link> 
+                </p>
+           </span>
   <div>
   <p>{product[0].crystalDesc}</p>
   <br />
