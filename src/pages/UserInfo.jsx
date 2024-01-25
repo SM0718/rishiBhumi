@@ -4,11 +4,12 @@ import Button from '../components/Button';
 import authService from '../appwrite/auth'
 import { useForm } from "react-hook-form";
 import appwriteService from "../appwrite/config";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function UserInfo() {
 
+    const {slug} = useParams()
     const [error, setError] = useState("")
     const [posts, setPosts] = useState([])
     const navigate = useNavigate();
@@ -31,7 +32,7 @@ function UserInfo() {
                     if(currentSession) {
                         const customerData = await appwriteService.createUserInfo({...data, phone: currentSession.phone, address:address, userId: currentSession.$id})
                             if(customerData) {
-                            //window.location.reload()
+                            navigate(`/add-details/${slug}`)
                         }
                     }
         } catch (error) {
@@ -57,7 +58,7 @@ function UserInfo() {
 
     useEffect(() => {
         getPosts()
-    }, [])
+    })
 
     const deleteDetail = async(postId) => {
         setError("")

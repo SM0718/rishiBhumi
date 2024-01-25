@@ -38,7 +38,7 @@ function Footer() {
         <Logo />
       </div>
 
-      <ul className='w-full md:w-auto h-auto flex flex-col gap-4 px-4 mx-auto'>
+      <ul className='w-full md:w-auto h-auto flex flex-col gap-4 px-4 mx-auto text-center md:text-left'>
         <li>
           <h1 className='text-2xl'>Explore RishiBhumi</h1>
         </li>
@@ -51,11 +51,11 @@ function Footer() {
         ))}
       </ul>
 
-      <div className='w-full md:w-auto h-auto flex flex-col gap-4 px-4 mx-auto'>
+      <div className='w-full md:w-auto h-auto flex flex-col gap-4 px-4 mx-auto text-center md:text-left'>
         <div>
           <h1 className='text-2xl'>Contact Us</h1>
         </div>
-        <div>
+        <div className='leading-loose'>
           <p><b>Email:- </b>abhiseksabui@gmail.com</p>
           <p><b>Phone No:- </b>9330032500</p>
         </div>

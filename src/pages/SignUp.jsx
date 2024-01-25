@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import authService from '../appwrite/auth'
-import {Link ,useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import {login} from '../store/authSlice'
-import {useDispatch, useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {useForm} from 'react-hook-form'
 import Input from '../components/Input'
 import Button from '../components/Button'
@@ -15,22 +15,12 @@ function SignUp() {
     const {register, handleSubmit} = useForm()
     const [toggleVerify, setToggleVerify] = useState(false)
 
-    // const create = async(data) => {
-        
-    //     setError("")
-    //     try {
-    //         console.log(data)
-    //         const userData = await authService.createAccount(data)
-    //         if (userData) {
-    //             const userData = await authService.getCurrentUser()
-    //             if(userData) dispatch(login(userData));
-    //             console.log(data, userData)
-    //             navigate("/")
-    //         }
-    //     } catch (error) {
-    //         setError(error.message)
-    //     }
-    // }
+    const input1Ref = useRef(null);
+    const input2Ref = useRef(null);
+    const input3Ref = useRef(null);
+    const input4Ref = useRef(null);
+    const input5Ref = useRef(null);
+    const input6Ref = useRef(null);
 
     const create = async(data) => {
         setError("")
@@ -49,7 +39,8 @@ function SignUp() {
     const verify = async(info) => {
         try {
             console.log("Inside Verify", info, info.secretCode, userId)
-            const userObj = {userId: userId, secretCode: info.secretCode}
+            const secretCode = `${info.first}${info.second}${info.third}${info.fourth}${info.fifth}${info.sixth}`
+            const userObj = {userId: userId, secretCode: secretCode}
             const verifyNumber = await authService.phoneSession(userObj);
             if(verifyNumber){
                 const userData = await authService.getCurrentUser()
@@ -64,6 +55,16 @@ function SignUp() {
             alert(error.message)
         }
     }
+
+    const handleInputChange = (currentRef, nextRef, maxLength, e) => {
+        const currentValue = e.target.value;
+    
+        if (currentValue.length === maxLength) {
+          if (nextRef) {
+            nextRef.current.focus();
+          }
+        }
+      };
 
   return (
     <div className='w-full h-[500px] py-10 flex flex-col justify-evenly gap-10 bg-center text-center' style={{backgroundImage: "url('./zodiac-wheel.png')"}}>
@@ -95,15 +96,51 @@ function SignUp() {
                 </form >)
                 :
                 (<form onSubmit={handleSubmit(verify)} className='flex flex-col justify-center'>
-                <Input
-                        label="Enter Your OTP"
-                        labelStyle = "font-bold mb-2 md:px-2 text-xl"
-                        placeholder="Enter the OTP"
-                        className= "w-1/2 mx-auto p-3 bg-yellow-200 rounded-2xl"
-                        {...register("secretCode", {
+                    <div className='w-1/2 mx-auto mb-2 flex justify-evenly gap-2'>
+                <Input  
+                        maxLength={1}
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        {...register("first", {
                             required: true,
                         })}
                         />
+                <Input
+                        maxLength={1}
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        {...register("second", {
+                            required: true,
+                        })}
+                        />
+                <Input  
+                        maxLength={1}
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        {...register("third", {
+                            required: true,
+                        })}
+                        />
+                <Input
+                        maxLength={1}
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        {...register("fourth", {
+                            required: true,
+                        })}
+                        />
+                <Input  
+                        maxLength={1}
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        {...register("fifth", {
+                            required: true,
+                        })}
+                        />
+                <Input
+                        maxLength={1}
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        {...register("sixth", {
+                            required: true,
+                        })}
+                        />
+                    </div>
+                
                 <Button type="submit" 
                         className="w-auto px-6 py-2 mx-auto my-4 text-center border border-[#b0a178] hover:bg-[#b0a178] rounded-3xl font-bold"
                         >
