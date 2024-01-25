@@ -31,7 +31,7 @@ function SelectExclusivePuja() {
               Book Now for Rs {product[0].pujaPrice}
             </Button>
           </span>
-            </span>
+            
               <span>
                 <p>
                   <b>
