@@ -31,7 +31,6 @@ function SelectKawach() {
               Order for just Rs {product[0].kawachPrice} {`(Free Delivery)`}
             </Button>
           </span>
-            </span>
               <span>
                 <p>
                   <b>
