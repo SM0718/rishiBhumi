@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { kawachDetails } from '../infos/kawach'
 import Button from '../components/Button';
 
@@ -31,6 +31,15 @@ function SelectKawach() {
               Order for just Rs {product[0].kawachPrice} {`(Free Delivery)`}
             </Button>
           </span>
+            </span>
+              <span>
+                <p>
+                  <b>
+                    Want to know your Gotra or Raashi?, Contact Us on
+                  </b>
+                        <Link className='text-green-500 bg-green-200 rounded-lg mx-1 px-1' to={`whatsapp://send?phone=+919330032500&text=For%20Gotra%20and%20Raashi!`}>Whatsapp</Link> 
+                </p>
+           </span>
 
           <span>
             <p className='my-2'>{product[0].kawachDesc}</p>
