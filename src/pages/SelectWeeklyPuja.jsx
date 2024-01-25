@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { weeklyPooja } from '../infos/weeklyPooja'
 import Button from '../components/Button';
 
