@@ -25,9 +25,9 @@ function UserInfo() {
     const createUser = async(data) => {
         setError("")
         try {
-                console.log(data)
+                
                 const address = data.house + " " + data.stName + " " + data.city + " " + data.pincode
-                console.log(address)
+                
                 const currentSession = await authService.getCurrentUser()
                     if(currentSession) {
                         const customerData = await appwriteService.createUserInfo({...data, phone: currentSession.phone, address:address, userId: currentSession.$id})
