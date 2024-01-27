@@ -14,31 +14,31 @@ function EPuja() {
       slug: "dakshineswar"
     },
     {
-      place: "Kalighat Kali Temple",
+      name: "Kalighat Kali Temple",
       img: "./Kalighat.jpg",
       price: 1501,
       slug: "kalighat"
     },
     {
-      place: "Taraknath Temple",
+      name: "Taraknath Temple",
       img: "/Tarakeswar.jpg",
       price: 1501,
       slug: "tarakeswar"
     },
     {
-      place: "Bhoothnath Mandir",
+      name: "Bhoothnath Mandir",
       img: "./BabaButhnath.jpg",
       price: 501,
       slug: "baba-bhutnath"
     },
     {
-      place: "Tarapith Mandir",
+      name: "Tarapith Mandir",
       img: "./Tarapit.jpg",
       price: 1501,
       slug: "tarapit"
     },
     {
-      place: "Mahesh Lord Jagannath Temple",
+      name: "Mahesh Lord Jagannath Temple",
       img: "./JaganathTemple.jpg",
       price: 799,
       slug: "jagannath"
@@ -55,7 +55,7 @@ function EPuja() {
               <img src={`/${temple[0].img}`} className='rounded-xl'/>
             </div>
             <div>
-              <h1 className='font-bold text-3xl mb-8'>{temple[0].place}</h1>
+              <h1 className='font-bold text-3xl mb-8'>{temple[0].name}</h1>
               <Button onClick={() => navigate(`/add-details/${slug}`)} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-green-500`}>
                 Book Now @ Rs {temple[0].price}
               </Button>

@@ -20,27 +20,20 @@ function SelectWeeklyPuja() {
 
         <div className='w-5/6 h-auto p-4 mx-auto my-8 flex flex-wrap justify-evenly gap-6'>
         <div className=''>
-          {product? (<img className='w-[350px] h-[250px] sm:h-[350px] rounded-2xl' src={`/${product[0].pujaPic}`} alt={product[0].pujaName} />)
+          {product? (<img className='w-[350px] h-[250px] sm:h-[350px] rounded-2xl' src={`/${product[0].pic}`} alt={product[0].name} />)
           : null
       }
         </div>
 
         <div className='w-full md:w-1/2 flex flex-col gap-4 '>
-          <h1 className='font-bold text-3xl'>{product[0].pujaName}</h1>
+          <h1 className='font-bold text-3xl'>{product[0].name}</h1>
           
           <span className='my-2'>
-            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-green-500`}>
+            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-red-500`}>
               Book Now for Rs 251
             </Button>
           </span>
-          <span>
-    <p>
-      <b>
-        Want to know your Gotra or Raashi?, Contact Us on
-      </b>
-      <Link className='text-green-500 bg-green-200 rounded-lg mx-1 px-1' to={`whatsapp://send?phone=+919330032500&text=For%20Gotra%20and%20Raashi!`}>Whatsapp</Link> 
-    </p>
-     </span>
+          
         </div>
       </div>
 
@@ -65,7 +58,7 @@ function SelectWeeklyPuja() {
       <div className='w-full lg:w-auto mx-auto leading-loose'>
         <div className='w-full md:w-auto md:mx-auto'>
           <h1 className='mb-2 font-bold text-xl'>Benefits:</h1>
-          <p className='w-full md:w-[350px] text-xl'>{product[0].pujaUse}</p>
+          <p className='w-full md:w-[350px] text-xl'>{product[0].use}</p>
         </div>
         </div>
 

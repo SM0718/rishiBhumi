@@ -5,7 +5,8 @@ import authService from '../appwrite/auth'
 import { useForm } from "react-hook-form";
 import appwriteService from "../appwrite/config";
 import { useNavigate, useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { login } from '../store/authSlice';
 
 function UserInfo() {
 
@@ -27,13 +28,9 @@ function UserInfo() {
         try {
                 
                 const address = data.house + " " + data.stName + " " + data.city + " " + data.pincode
-                
                 const currentSession = await authService.getCurrentUser()
                     if(currentSession) {
-                        const customerData = await appwriteService.createUserInfo({...data, phone: currentSession.phone, address:address, userId: currentSession.$id})
-                            if(customerData) {
-                            navigate(`/add-details/${slug}`)
-                        }
+                        await appwriteService.createUserInfo({...data, phone: currentSession.phone, address:address, userId: currentSession.$id})
                     }
         } catch (error) {
             setError(error.message)
@@ -47,6 +44,7 @@ function UserInfo() {
             if(currentSession) {
                 const customerData = await appwriteService.getUserData(currentSession.phone)
                 if(customerData) {
+                    console.log(customerData.documents)
                     setPosts(customerData.documents)
                 }
             }
@@ -74,6 +72,10 @@ function UserInfo() {
         
     }
 
+    const handelCLick = () => {
+        navigate(`/checkout/${slug}`)
+    }
+
   return (
     <>
     <div className='w-full h-auto flex flex-col justify-center p-2 my-8'>
@@ -81,12 +83,12 @@ function UserInfo() {
             (posts.length !== 0) && (<h1 className='mx-auto text-xl font-semibold text-center'>Choose An Address</h1>)
         }
         
-        <div className='w-full h-auto p-2 m-2 flex flex-wrap justify-start gap-2'>
+        <div className='w-full h-auto px-2 mx-auto m-2 flex flex-wrap justify-start  gap-2'>
             
             {
                 posts && 
                     posts.map((item) => (
-                        <div key={item.$id} className='w-full md:w-[450px] h-[275px] flex flex-col rounded-2xl border-2 border-b-8 border-yellow-400'>
+                        <div key={item.$id} className='w-full md:w-[450px] h-[275px]  flex flex-col rounded-2xl border-2 border-b-8 border-yellow-400'>
 
                             <div className='w-full h-[200px] px-2 flex flex-col justify-evenly'>
                                 <p>Name: {item.name}</p>
@@ -98,7 +100,7 @@ function UserInfo() {
                             </div>
 
                             <div className='w-full text-center pb-1'>
-                                <Button className="w-2/5 p-2 mx-2 bg-[#f0df20] rounded-xl hover:bg-green-500 text-center">Use This</Button>
+                                <Button onClick={() => handelCLick()} className="w-2/5 p-2 mx-2 bg-[#f0df20] rounded-xl hover:bg-green-500 text-center">Use This</Button>
                                 <Button onClick={() => deleteDetail(item.$id)} className="w-2/5 p-2 mx-auto bg-red-500 rounded-xl hover:bg-red-800 hover:text-red-500 text-center">
                                     Delete
                                 </Button>

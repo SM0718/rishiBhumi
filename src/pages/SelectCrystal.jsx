@@ -25,17 +25,17 @@ function SelectCrystal() {
   <h1 className='font-bold text-3xl'>{product[0].crystalName}</h1>
   
   <span className='my-2'>
-    <Button onClick={() => navigate(`/add-details/${slug}`)} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-green-500`}>
+    <Button onClick={() => navigate(`/add-details/${slug}`)} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-red-500`}>
       Book Now for Rs {product[0].crystalPrice}
     </Button>
   </span>
   <span>
     <p>
-      <b>
-        Want to know your Gotra or Raashi?, Contact Us on
+      <b className='pr-1'>
+        Contact For Bulk Order:-  
       </b>
-      <Link className='text-green-500 bg-green-200 rounded-lg mx-1 px-1' to={`whatsapp://send?phone=+919330032500&text=For%20Gotra%20and%20Raashi!`}>Whatsapp</Link> 
-    </p>
+       contact@rishibhumi.com
+       </p>
      </span>
   <div>
   <p>{product[0].crystalDesc}</p>

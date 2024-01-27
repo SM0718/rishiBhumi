@@ -1,92 +1,107 @@
 export const weeklyPooja = [
     {
-        pujaName: "Satyanarayan Pooja",
-        pujaPic: "./WeeklyPooja/1.jpg",
-        pujaUse: "The puja is also performed to promote family unity and harmony.",
+        name: "Satyanarayan Pooja",
+        pic: "./WeeklyPooja/1.jpg",
+        use: "The puja is also performed to promote family unity and harmony.",
+        price: 251,
         slug: "satyanarayan-pooja"
     },
     {
-        pujaName: "Shani Graha Shanti Pooja",
-        pujaPic: "./WeeklyPooja/2.jpg",
-        pujaUse: "To improve Health, Well-being and Financial Stability",
+        name: "Shani Graha Shanti Pooja",
+        pic: "./WeeklyPooja/2.jpg",
+        use: "To improve Health, Well-being and Financial Stability",
+        price: 251,
         slug: "shani-graha-shanti-pooja"
     },
     {
-        pujaName: "Ganesh Pooja",
-        pujaPic: "./WeeklyPooja/3.webp",
-        pujaUse: "Gaining success in whether it be in academics, career, business, or personal life",
+        name: "Ganesh Pooja",
+        pic: "./WeeklyPooja/3.webp",
+        use: "Gaining success in whether it be in academics, career, business, or personal life",
+        price: 251,
         slug: "ganesh-pooja"
     },
     {
-        pujaName: "Shiv Pooja",
-        pujaPic: "./WeeklyPooja/4.jpg",
-        pujaUse: "Destruction of Negativity and Removal of Obstacles. Get blessings for good health and well-being",
+        name: "Shiv Pooja",
+        pic: "./WeeklyPooja/4.jpg",
+        use: "Destruction of Negativity and Removal of Obstacles. Get blessings for good health and well-being",
+        price: 251,
         slug: "shiv-pooja"
     },
     {
-        pujaName: "Baba Lokenath Pooja",
-        pujaPic: "./WeeklyPooja/5.jpg",
-        pujaUse: "Protection from Calamities, Health and Well-being",
+        name: "Baba Lokenath Pooja",
+        pic: "./WeeklyPooja/5.jpg",
+        use: "Protection from Calamities, Health and Well-being",
+        price: 251,
         slug: "baba-lokenath-pooja"
     },
     {
-        pujaName: "Shri Laxmi Pooja",
-        pujaPic: "./WeeklyPooja/6.jpg",
-        pujaUse: "Invoke Wealth & Attract Success in Career & Business, also To bring overall material well-being, including success in business, career, and personal life.",
+        name: "Shri Laxmi Pooja",
+        pic: "./WeeklyPooja/6.jpg",
+        use: "Invoke Wealth & Attract Success in Career & Business, also To bring overall material well-being, including success in business, career, and personal life.",
+        price: 251,
         slug: "shri-laxmi-pooja"
     },
     {
-        pujaName: "Radha Krishna Pooja",
-        pujaPic: "./WeeklyPooja/7.jpg",
-        pujaUse: "To remove obstacles and challenges in life, providing a clear and smooth path for personal and spiritual growth",
+        name: "Radha Krishna Pooja",
+        pic: "./WeeklyPooja/7.jpg",
+        use: "To remove obstacles and challenges in life, providing a clear and smooth path for personal and spiritual growth",
+        price: 251,
         slug: "radha-krishna-pooja"
     },
     {
-        pujaName: "Maha Mrityunjay Pooja",
-        pujaPic: "./WeeklyPooja/8.jpg",
-        pujaUse: "To seek Lord Shiva's blessings for good health and longevity, and to overcome illnesses and physical ailments.",
+        name: "Maha Mrityunjay Pooja",
+        pic: "./WeeklyPooja/8.jpg",
+        use: "To seek Lord Shiva's blessings for good health and longevity, and to overcome illnesses and physical ailments.",
+        price: 251,
         slug: "maha-mrityunjay-pooja"
     },
     {
-        pujaName: "Maha Rudrabhishek Pooja",
-        pujaPic: "./WeeklyPooja/9.jpg",
-        pujaUse: "Seek divine assistance and blessings for success in various endeavors, including career, business, and personal pursuits",
+        name: "Maha Rudrabhishek Pooja",
+        pic: "./WeeklyPooja/9.jpg",
+        use: "Seek divine assistance and blessings for success in various endeavors, including career, business, and personal pursuits",
+        price: 251,
         slug: "maha-rudrabhishek-pooja"
     },
     {
-        pujaName: "Hanuman Pooja",
-        pujaPic: "./WeeklyPooja/10.jpg",
-        pujaUse: "Gain strength, courage, and resilience to face challenges in life.",
+        name: "Hanuman Pooja",
+        pic: "./WeeklyPooja/10.jpg",
+        use: "Gain strength, courage, and resilience to face challenges in life.",
+        price: 251,
         slug: "hanuman-pooja"
     },
     {
-        pujaName: "Mahalaxmi Aarti",
-        pujaPic: "./WeeklyPooja/11.jpg",
-        pujaUse: "Resolution of debts, financial stability, and the removal of any hindrances in financial affairs.",
+        name: "Mahalaxmi Aarti",
+        pic: "./WeeklyPooja/11.jpg",
+        use: "Resolution of debts, financial stability, and the removal of any hindrances in financial affairs.",
+        price: 251,
         slug: "mahalaxmi-aarti"
     },
     {
-        pujaName: "Maa Mangal Chandi Pooja",
-        pujaPic: "./WeeklyPooja/12.jpg",
-        pujaUse: "Removal of hurdles in their personal, professional, and spiritual paths.",
+        name: "Maa Mangal Chandi Pooja",
+        pic: "./WeeklyPooja/12.jpg",
+        use: "Removal of hurdles in their personal, professional, and spiritual paths.",
+        price: 251,
         slug: "maa-mangal-chandi-pooja"
     },
     {
-        pujaName: "Sawaraswati Pooja",
-        pujaPic: "./WeeklyPooja/13.jpg",
-        pujaUse: "Saraswati Puja can bless them with eloquence, clarity of speech, and effective communication skills",
+        name: "Sawaraswati Pooja",
+        pic: "./WeeklyPooja/13.jpg",
+        use: "Saraswati Puja can bless them with eloquence, clarity of speech, and effective communication skills",
+        price: 251,
         slug: "sawaraswati-pooja"
     },
     {
-        pujaName: "Navgraha Shanti Pooja",
-        pujaPic: "./WeeklyPooja/14.jpg",
-        pujaUse: "To seek protection from illnesses and to promote general well-being.",
+        name: "Navgraha Shanti Pooja",
+        pic: "./WeeklyPooja/14.jpg",
+        use: "To seek protection from illnesses and to promote general well-being.",
+        price: 251,
         slug: "navgraha-shanti-pooja"
     },
     {
-        pujaName: "Kali Puja during Amavasya",
-        pujaPic: "./WeeklyPooja/15.jpg",
-        pujaUse: "To seek her divine intervention to remove hurdles in their personal, professional, and spiritual paths",
+        name: "Kali Puja during Amavasya",
+        pic: "./WeeklyPooja/15.jpg",
+        use: "To seek her divine intervention to remove hurdles in their personal, professional, and spiritual paths",
+        price: 251,
         slug: "kali-pooja-amavasya"
     },
 ]

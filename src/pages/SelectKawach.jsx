@@ -24,20 +24,20 @@ function SelectKawach() {
         </div>
 
         <div className='w-full md:w-1/2 flex flex-col gap-4 '>
-          <h1 className='font-bold text-3xl'>{product[0].kawachName}</h1>
+          <h1 className='font-bold text-3xl'>{product[0].name}</h1>
           
           <span className='my-2'>
-            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-green-500`}>
-              Order for just Rs {product[0].kawachPrice} {`(Free Delivery)`}
+            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-red-500`}>
+              Order for just Rs {product[0].price} {`(Free Delivery)`}
             </Button>
           </span>
           <span>
     <p>
-      <b>
-        Want to know your Gotra or Raashi?, Contact Us on
+      <b className='pr-1'>
+        Contact For Bulk Order:-  
       </b>
-      <Link className='text-green-500 bg-green-200 rounded-lg mx-1 px-1' to={`whatsapp://send?phone=+919330032500&text=For%20Gotra%20and%20Raashi!`}>Whatsapp</Link> 
-    </p>
+       contact@rishibhumi.com
+       </p>
      </span>
 
           <span>

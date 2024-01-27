@@ -15,13 +15,6 @@ function SignUp() {
     const {register, handleSubmit} = useForm()
     const [toggleVerify, setToggleVerify] = useState(false)
 
-    const input1Ref = useRef(null);
-    const input2Ref = useRef(null);
-    const input3Ref = useRef(null);
-    const input4Ref = useRef(null);
-    const input5Ref = useRef(null);
-    const input6Ref = useRef(null);
-
     const create = async(data) => {
         setError("")
         try{
@@ -56,15 +49,6 @@ function SignUp() {
         }
     }
 
-    const handleInputChange = (currentRef, nextRef, maxLength, e) => {
-        const currentValue = e.target.value;
-    
-        if (currentValue.length === maxLength) {
-          if (nextRef) {
-            nextRef.current.focus();
-          }
-        }
-      };
 
   return (
     <div className='w-full h-[500px] py-10 flex flex-col justify-evenly gap-10 bg-center text-center' style={{backgroundImage: "url('./zodiac-wheel.png')"}}>

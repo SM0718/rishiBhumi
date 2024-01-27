@@ -58,6 +58,8 @@ function Footer() {
         <div className='leading-loose'>
           <p><b>Email:- </b>abhiseksabui@gmail.com</p>
           <p><b>Phone No:- </b>9330032500</p>
+          <p><b>Address:- </b>5, Words Institution Street, Kolkata - 700006</p>
+
         </div>
       </div>
 

@@ -24,21 +24,14 @@ function SelectExclusivePuja() {
         </div>
 
         <div className='w-full md:w-1/2 flex flex-col gap-4 '>
-          <h1 className='font-bold text-3xl'>{product[0].pujaName}</h1>
+          <h1 className='font-bold text-3xl'>{product[0].name}</h1>
           
           <span className='my-2'>
-            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-green-500`}>
-              Book Now for Rs {product[0].pujaPrice}
+            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-red-500`}>
+              Book Now for Rs {product[0].price}
             </Button>
           </span>
-          <span>
-    <p>
-      <b>
-        Want to know your Gotra or Raashi?, Contact Us on
-      </b>
-      <Link className='text-green-500 bg-green-200 rounded-lg mx-1 px-1' to={`whatsapp://send?phone=+919330032500&text=For%20Gotra%20and%20Raashi!`}>Whatsapp</Link> 
-    </p>
-     </span>
+          
         </div>
       </div>
 

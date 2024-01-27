@@ -3,7 +3,20 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import {Home,WeeklyPuja, ExclusivePuja, EPuja, Kawach, Crystals, SelectWeeklyPuja, SelectExclusivePuja, SelectKawach, SelectCrystal, SignUp, UserInfo} from './pages/index.js'
+import {
+  Home, 
+  WeeklyPuja, 
+  ExclusivePuja, 
+  EPuja, 
+  Kawach, 
+  Crystals, 
+  SelectWeeklyPuja, 
+  SelectExclusivePuja, 
+  SelectKawach, 
+  SelectCrystal, 
+  SignUp, 
+  UserInfo, 
+  Checkout} from './pages/index.js'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 
@@ -22,6 +35,7 @@ const router = createBrowserRouter(
       <Route path='crystals/:slug' element={<SelectCrystal />} />
       <Route path='login' element={<SignUp />} />
       <Route path='add-details/:slug' element={<UserInfo />} />
+      <Route path='checkout/:slug' element={<Checkout />} />
     </Route>
   ))
 

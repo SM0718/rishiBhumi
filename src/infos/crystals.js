@@ -313,4 +313,5 @@ export const crystalDetails = [
         },
         slug: "love-coins"
     },
+    
 ]
