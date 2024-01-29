@@ -12,6 +12,10 @@ import Login from "./Login.jsx";
 import SignUp from "./SignUp.jsx";
 import UserInfo from "./UserInfo.jsx";
 import Checkout from "./Checkout.jsx";
+import Blog from "./Blog.jsx";
+import PrivacyPolicy from "./PrivacyPolicy.jsx";
+import Terms from "./Terms.jsx";
+import RefundPolicy from "./RefundPolicy.jsx";
 
 
 
@@ -29,5 +33,9 @@ export {
     Login,
     SignUp,
     UserInfo,
-    Checkout
+    Checkout,
+    Blog,
+    PrivacyPolicy,
+    Terms,
+    RefundPolicy
 }

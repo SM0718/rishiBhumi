@@ -90,7 +90,7 @@ function Home() {
         <div className='w-full h-auto my-14 flex flex-wrap justify-center gap-6'>
 
           <div onClick={() => navigate('/weekly-pooja')} className='w-[250px] h-[250px] 
-          flex flex-col justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
+          flex flex-col font-sans justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
           cursor-pointer hover:scale-95' style={{backgroundImage: `url(./weekly-pooja.jpg)`}}>
             <div className='p-4 bg-slate-700/50 rounded-b-2xl'>
               <p className='text-center text-white font-semibold '>Weekly Pooja</p>
@@ -98,7 +98,7 @@ function Home() {
           </div>
 
           <div onClick={() => navigate('/exclusive-pooja')} className='w-[250px] h-[250px] 
-          flex flex-col justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
+          flex flex-col font-sans justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
           cursor-pointer hover:scale-95' style={{backgroundImage: `url(./special-pooja.jpg)`}}>
             <div className='p-4 bg-slate-700/50 rounded-b-2xl'>
               <p className='text-center text-white font-semibold '>Exclusive Pooja</p>
@@ -106,7 +106,7 @@ function Home() {
           </div>
 
           <div onClick={() => navigate('/kawach')} className='w-[250px] h-[250px] 
-          flex flex-col justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
+          flex flex-col font-sans justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
           cursor-pointer hover:scale-95' style={{backgroundImage: `url(./Kawach.png)`}}>
             <div className='p-4 bg-slate-700/50 rounded-b-2xl'>
               <p className='text-center text-white font-semibold '>Kawach</p>
@@ -114,7 +114,7 @@ function Home() {
           </div>
 
           <div onClick={() => navigate('/crystals')} className='w-[250px] h-[250px] 
-          flex flex-col justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
+          flex flex-col font-sans justify-end bg-center bg-cover bg-no-repeat rounded-2xl 
           cursor-pointer hover:scale-95' style={{backgroundImage: `url(./Crystals.jpg)`}}>
             <div className='p-4 bg-slate-700/50 rounded-b-2xl'>
               <p className='text-center text-white font-semibold '>Crystals</p>

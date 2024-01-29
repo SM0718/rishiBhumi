@@ -53,17 +53,21 @@ function Header() {
       name: "Crystals",
       slug: "/crystals"
     },
+    {
+      name: "Blog",
+      slug: "/blog"
+    }
   ];
 
   return (
     <>
-    <header className='h-auto lg:h-30 w-full border-b-2 bg-white rounded-b-xl px-2 flex justify-between'>
+    <header className='h-auto lg:h-30 w-full border-b-2 bg-slate-700 rounded-b-xl px-2 flex justify-between'>
       <Logo className="my-auto"/>
 
       <ul className='w-3/5 hidden xl:flex justify-evenly my-auto'>
         {headings.map((item) => (
           <li key={item.name}>
-            <NavLink to={item.slug} className={({isActive}) => `${isActive? "text-[#b0a178] font-semibold " : "text-black"} hover:text-[#b0a178]`}>
+            <NavLink to={item.slug} className={({isActive}) => `${isActive? "text-white font-semibold " : "text-[#b0a178]"} hover:text-[#b0a178]`}>
               {item.name}
             </NavLink>
           </li>
@@ -71,20 +75,20 @@ function Header() {
       </ul>
 
         { !authStatus?
-          (<div className='w-auto my-auto hidden xl:flex justify-between gap-6'>
+          (<div className='w-auto my-auto hidden xl:flex justify-between gap-6 '>
         
-        <Button onClick={() => navigate('login')} className='px-6 py-2 w-auto bg-[#b0a178] hover:bg-white hover:outline hover:outline-1 hover:outline-[#b0a178] rounded-3xl'>
+        <Button onClick={() => navigate('login')} className='px-6 py-2 w-auto text-white bg-[#b0a178] hover:outline hover:outline-1 hover:outline-[#b0a178] rounded-3xl'>
             Login
         </Button>
       </div>) :
 
       (<div className='w-auto my-auto hidden xl:flex justify-between gap-6'>
-      <LogoutBtn className='px-6 py-2 w-auto border bottom-1 border-[#b0a178] hover:bg-[#b0a178] rounded-3xl' />
+      <LogoutBtn className='px-6 py-2 w-auto border bottom-1 text-white border-[#b0a178] hover:bg-[#b0a178] rounded-3xl' />
       </div>)
         }
 
     
-      <div className="h-10 w-10 my-auto flex xl:hidden cursor-pointer" onClick={toggleMenu}>
+      <div className="h-10 w-10 my-auto flex xl:hidden cursor-pointer " onClick={toggleMenu}>
       <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none">
         <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
         <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
@@ -95,7 +99,7 @@ function Header() {
 
     </header>
 
-    <ul className={`${open? 'flex flex-col' : 'hidden'} justify-end text-center xl:hidden border-b-4 border-yellow-300 rounded-b-xl `}>
+    <ul className={`${open? 'flex flex-col' : 'hidden'} justify-end text-center xl:hidden border-b-4 border-slate-500 rounded-b-xl `}>
 
     {headings.map((item) => (
             <NavLink to={item.slug} key={item.name} className={({isActive}) => `${isActive? "bg-[#b0a178] font-semibold hover:text-black" : "text-black"} hover:text-[#b0a178] hover:scale-95`}>

@@ -51,7 +51,7 @@ function SignUp() {
 
 
   return (
-    <div className='w-full h-[500px] py-10 flex flex-col justify-evenly gap-10 bg-center text-center' style={{backgroundImage: "url('./zodiac-wheel.png')"}}>
+    <div className='w-full h-[500px] py-10 flex flex-col justify-evenly gap-10 bg-center bg-no-repeat text-center' style={{backgroundImage: "url('./zodiac-wheel.png')"}}>
 
         <div className='w-full h-auto my-4 flex flex-col justify-center'>
             <h1 className='text-6xl font-semibold pb-6'>Login To Your Account</h1>
@@ -67,13 +67,13 @@ function SignUp() {
                         label="Enter your Number"
                         labelStyle = "font-bold mb-2 md:px-2 text-xl"
                         placeholder="Enter Your Number"
-                        className= "w-1/2 md:w-[500px] mx-auto p-3 bg-yellow-200 rounded-2xl"
+                        className= "w-1/2 md:w-[500px] mx-auto p-3 border-2 border-black rounded-2xl"
                         {...register("number", {
                             required: true,
                         })}
                         />
                 <Button type="submit" 
-                        className="w-auto px-6 py-2 mx-auto my-4 text-center border border-[#b0a178] hover:bg-[#b0a178] rounded-3xl font-bold"
+                        className="w-auto px-6 py-2 mx-auto my-4 text-center border bg-[#b0a178] text-white border-[#b0a178] hover:bg-[#b0a178] rounded-3xl"
                         >
                             LOGIN
                         </Button>
@@ -83,42 +83,42 @@ function SignUp() {
                     <div className='w-1/2 mx-auto mb-2 flex justify-evenly gap-2'>
                 <Input  
                         maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
                         {...register("first", {
                             required: true,
                         })}
                         />
                 <Input
                         maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
                         {...register("second", {
                             required: true,
                         })}
                         />
                 <Input  
                         maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
                         {...register("third", {
                             required: true,
                         })}
                         />
                 <Input
                         maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
                         {...register("fourth", {
                             required: true,
                         })}
                         />
                 <Input  
                         maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
                         {...register("fifth", {
                             required: true,
                         })}
                         />
                 <Input
                         maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 bg-yellow-200 outline outline-2 outline-yellow-500 rounded-xl"
+                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
                         {...register("sixth", {
                             required: true,
                         })}

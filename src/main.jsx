@@ -16,7 +16,11 @@ import {
   SelectCrystal, 
   SignUp, 
   UserInfo, 
-  Checkout} from './pages/index.js'
+  Checkout,
+  Blog,
+  PrivacyPolicy,
+  Terms,
+  RefundPolicy} from './pages/index.js'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 
@@ -33,9 +37,14 @@ const router = createBrowserRouter(
       <Route path='kawach/:slug' element={<SelectKawach />} />
       <Route path='crystals' element={<Crystals />} />
       <Route path='crystals/:slug' element={<SelectCrystal />} />
+      <Route path='blog' element={<Blog />} />
       <Route path='login' element={<SignUp />} />
       <Route path='add-details/:slug' element={<UserInfo />} />
       <Route path='checkout/:slug' element={<Checkout />} />
+      <Route path='privacy-policy' element={<PrivacyPolicy />} />
+      <Route path='terms' element={<Terms />} />
+      <Route path='refund' element={<RefundPolicy />} />
+
     </Route>
   ))
 

@@ -93,6 +93,21 @@ export class Service{
             return false
         }
     }
+
+    async getBlogData(date){
+        try {
+            return await this.databases.listDocuments(
+                conf.appwriteDatabaseId,
+                conf.appwriteBlogCollectionId,
+                [
+                    Query.equal("date", date)
+                ]
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
+        }
+    }
 }
 
 

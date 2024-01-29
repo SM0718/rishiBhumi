@@ -28,10 +28,14 @@ function Footer() {
       name: "Crystals",
       slug: "/crystals"
     },
+    {
+      name: "Blog",
+      slug: "/blog"
+    }
   ];
 
   return (
-    <footer className='w-full h-auto flex flex-col gap-6 justify-evenly p-6 bg-[#666666] rounded-t-xl'>
+    <footer className='w-full h-auto flex flex-col gap-6 justify-evenly p-6 bg-slate-700 rounded-t-xl'>
 
       <div className='w-full flex flex-col md:flex-row gap-6 justify-start'>
         <div className='mx-auto'>
@@ -40,11 +44,11 @@ function Footer() {
 
       <ul className='w-full md:w-auto h-auto flex flex-col gap-4 px-4 mx-auto text-center md:text-left'>
         <li>
-          <h1 className='text-2xl'>Explore RishiBhumi</h1>
+          <h1 className='text-2xl font-semibold'>Explore RishiBhumi</h1>
         </li>
         {headings.map((item) => (
           <li  key={item.name}>
-            <NavLink to={item.slug} className={({isActive}) => `${isActive? "text-[#b0a178] font-semibold" : "text-black"} hover:text-[#b0a178]`}>
+            <NavLink to={item.slug} className={({isActive}) => `${isActive? "text-white font-semibold" : "text-[#b0a178]"} hover:text-[#b0a178]`}>
               {item.name}
             </NavLink>
           </li>
@@ -53,15 +57,24 @@ function Footer() {
 
       <div className='w-full md:w-auto h-auto flex flex-col gap-4 px-4 mx-auto text-center md:text-left'>
         <div>
-          <h1 className='text-2xl'>Contact Us</h1>
+          <h1 className='text-2xl font-semibold'>Contact Us</h1>
         </div>
         <div className='leading-loose'>
-          <p><b>Email:- </b>abhiseksabui@gmail.com</p>
-          <p><b>Phone No:- </b>9330032500</p>
-          <p><b>Address:- </b>5, Words Institution Street, Kolkata - 700006</p>
+          <p><b>Email:- </b><span className='text-white'>abhiseksabui@gmail.com</span></p>
+          <p><b>Phone No:- </b><span className='text-white'>9330032500</span></p>
+          <p><b>Address:- </b><span className='text-white'>5, Words Institution Street, Kolkata - 700006</span></p>
 
         </div>
       </div>
+
+      <div className='mx-auto'>
+        <h1 className='text-2xl font-semibold'>Important Links</h1>
+        <div className='mt-2 flex flex-col leading-loose text-center md:text-left'>
+          <NavLink to={'/privacy-policy'} className={({isActive}) => `${isActive? "text-white font-semibold" : "text-[#b0a178]"} hover:text-[#b0a178]`}>Privacy Policy</NavLink>
+          <NavLink to={'/terms'} className={({isActive}) => `${isActive? "text-white font-semibold" : "text-[#b0a178]"} hover:text-[#b0a178]`}>Terms Of Service</NavLink>
+          <NavLink to={'/refund'} className={({isActive}) => `${isActive? "text-white font-semibold" : "text-[#b0a178]"} hover:text-[#b0a178]`}>Refund Policy</NavLink>
+        </div>
+         </div>
 
       </div>
 
