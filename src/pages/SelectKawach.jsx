@@ -27,7 +27,7 @@ function SelectKawach() {
           <h1 className='font-bold text-3xl'>{product[0].name}</h1>
           
           <span className='my-2'>
-            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#f0df20] rounded-xl animate-bounce hover:bg-red-500`}>
+            <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#B1A178] rounded-xl animate-bounce hover:bg-[#CCC0B0]`}>
               Order for just Rs {product[0].price} {`(Free Delivery)`}
             </Button>
           </span>
