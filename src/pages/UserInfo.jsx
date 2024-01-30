@@ -44,7 +44,6 @@ function UserInfo() {
             if(currentSession) {
                 const customerData = await appwriteService.getUserData(currentSession.phone)
                 if(customerData) {
-                    console.log(customerData.documents)
                     setPosts(customerData.documents)
                 }
             }
