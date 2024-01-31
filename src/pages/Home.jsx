@@ -21,7 +21,7 @@ function Home() {
     },
     {
       place: "Taraknath Temple",
-      img: "/Tarakeswar.jpg",
+      img: "./Tarakeswar.jpg",
       slug: "tarakeswar"
     },
     {

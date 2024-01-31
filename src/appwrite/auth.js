@@ -38,10 +38,12 @@ export class AuthService {
 
     async phoneLogin({number}) {
         try {
+            console.log("Inside auth phone login: ", number)
             const sessionId = ID.unique();
             const sessionToken = await this.account.createPhoneSession(sessionId, number);
 
             if (sessionToken) {
+                console.log("Inside sessionToken:", sessionToken)
                 return sessionToken.userId;
             }
         } catch (error) {

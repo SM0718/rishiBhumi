@@ -108,6 +108,37 @@ export class Service{
             return false
         }
     }
+
+    async createOrder({name, address, email, phone, product, price}){
+        try {
+            return await this.databases.createDocument(
+                conf.appwriteDatabaseId,
+                conf.appwriteOrdersId,
+                ID.unique(),
+                {
+                    name,
+                    address,
+                    email,
+                    phone,
+                    product,
+                    price
+                }
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: createOrder :: error", error);
+        }
+    }
+
+    // async getAddress({documentId}){
+    //     try {
+    //         return await this.databases.getDocument(
+    //             conf.appwriteDatabaseId,
+
+    //         )
+    //     } catch (error) {
+            
+    //     }
+    // }
 }
 
 

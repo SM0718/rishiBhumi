@@ -16,6 +16,7 @@ function UserInfo() {
     const navigate = useNavigate();
     const {register, handleSubmit} = useForm()
     const loginStatus = useSelector((state) => state.auth.status);
+    const dispatch = useDispatch()
 
     useEffect(() => {
         if (!loginStatus) {
@@ -30,6 +31,7 @@ function UserInfo() {
                 const address = data.house + " " + data.stName + " " + data.city + " " + data.pincode
                 const currentSession = await authService.getCurrentUser()
                     if(currentSession) {
+                        console.log(currentSession)
                         await appwriteService.createUserInfo({...data, phone: currentSession.phone, address:address, userId: currentSession.$id})
                     }
         } catch (error) {
@@ -44,7 +46,6 @@ function UserInfo() {
             if(currentSession) {
                 const customerData = await appwriteService.getUserData(currentSession.phone)
                 if(customerData) {
-                    console.log(customerData.documents)
                     setPosts(customerData.documents)
                 }
             }
@@ -72,7 +73,8 @@ function UserInfo() {
         
     }
 
-    const handelCLick = () => {
+    const handelCLick = (documentId) => {
+        dispatch(login(documentId))
         navigate(`/checkout/${slug}`)
     }
 
@@ -100,7 +102,7 @@ function UserInfo() {
                             </div>
 
                             <div className='w-full text-center pb-1'>
-                                <Button onClick={() => handelCLick()} className="w-2/5 p-2 mx-2 bg-[#f0df20] rounded-xl hover:bg-green-500 text-center">Use This</Button>
+                                <Button onClick={() => handelCLick(item.$id)} className="w-2/5 p-2 mx-2 bg-[#f0df20] rounded-xl hover:bg-green-500 text-center">Use This</Button>
                                 <Button onClick={() => deleteDetail(item.$id)} className="w-2/5 p-2 mx-auto bg-red-500 rounded-xl hover:bg-red-800 hover:text-red-500 text-center">
                                     Delete
                                 </Button>

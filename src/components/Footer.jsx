@@ -35,7 +35,7 @@ function Footer() {
   ];
 
   return (
-    <footer className='w-full h-auto flex flex-col gap-6 justify-evenly p-6 bg-slate-700 rounded-t-xl'>
+    <footer className='w-full h-auto flex flex-col gap-6 justify-evenly p-6 bg-gradient-to-r from-[#2F4F4F] to-[#3E5E5E] rounded-t-xl'>
 
       <div className='w-full flex flex-col md:flex-row gap-6 justify-start'>
         <div className='mx-auto'>

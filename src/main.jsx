@@ -20,7 +20,8 @@ import {
   Blog,
   PrivacyPolicy,
   Terms,
-  RefundPolicy} from './pages/index.js'
+  RefundPolicy,
+  Success} from './pages/index.js'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
       <Route path='privacy-policy' element={<PrivacyPolicy />} />
       <Route path='terms' element={<Terms />} />
       <Route path='refund' element={<RefundPolicy />} />
+      <Route path='success' element={<Success />} />
 
     </Route>
   ))

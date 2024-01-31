@@ -16,6 +16,7 @@ import Blog from "./Blog.jsx";
 import PrivacyPolicy from "./PrivacyPolicy.jsx";
 import Terms from "./Terms.jsx";
 import RefundPolicy from "./RefundPolicy.jsx";
+import Success from "./Success.jsx";
 
 
 
@@ -37,5 +38,6 @@ export {
     Blog,
     PrivacyPolicy,
     Terms,
-    RefundPolicy
+    RefundPolicy,
+    Success
 }

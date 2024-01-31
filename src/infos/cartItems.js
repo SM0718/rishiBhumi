@@ -426,4 +426,42 @@ export const cartItems = [
         slug: "love-coins"
     },
     
+
+    {
+        name: "Dakshineswar Kali Temple (E-Puja)",
+        pic: "./Dakshineswar.jpg",
+        price: 1001,
+        slug: "dakshineswar"
+      },
+      {
+        name: "Kalighat Kali Temple (E-Puja)",
+        pic: "./Kalighat.jpg",
+        price: 1501,
+        slug: "kalighat"
+      },
+      {
+        name: "Taraknath Temple (E-Puja)",
+        pic: "/Tarakeswar.jpg",
+        price: 1501,
+        slug: "tarakeswar"
+      },
+      {
+        name: "Bhoothnath Mandir (E-Puja)",
+        pic: "./BabaButhnath.jpg",
+        price: 501,
+        slug: "baba-bhutnath"
+      },
+      {
+        name: "Tarapith Mandir (E-Puja)",
+        pic: "./Tarapit.jpg",
+        price: 1501,
+        slug: "tarapit"
+      },
+      {
+        name: "Mahesh Lord Jagannath Temple (E-Puja)",
+        pic: "./JaganathTemple.jpg",
+        price: 799,
+        slug: "jagannath"
+      },
+    
 ]

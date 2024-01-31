@@ -52,7 +52,7 @@ function EPuja() {
         temple && (
           <div className='w-full h-full flex flex-col md:flex-row gap-4 my-8'>
             <div className='w-5/6 mx-auto'>
-              <img src={`/${temple[0].img}`} className='rounded-xl'/>
+              <img src={`/${temple[0].img}`} alt={temple[0].name} className='rounded-xl'/>
             </div>
             <div>
               <h1 className='font-bold text-3xl mb-8'>{temple[0].name}</h1>
