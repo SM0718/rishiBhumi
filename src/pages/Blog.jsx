@@ -11,7 +11,6 @@ function Blog() {
         try {
             const data = await appwriteService.getBlogData(day.toString());
             if(data) {
-                console.log(data)
                 if(data.total > 0) {
                     setBlog(data.documents);
                     setLoader(false)

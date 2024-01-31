@@ -18,7 +18,6 @@ function SignUp() {
     const create = async(data) => {
         setError("")
         try{
-            console.log(data)
             const userData = await authService.phoneLogin(data)
             if(userData) {
                 console.log(userData)
