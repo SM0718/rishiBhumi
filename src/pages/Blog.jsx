@@ -51,8 +51,8 @@ function Blog() {
                     </div>
                 )
             }
-            <h1>Hello World</h1>
-            <p>Predictions</p>
+            <h1>Add New Blogs Here/h1>
+            <p>New Posts</p>
         </div>
     </div>
   )
