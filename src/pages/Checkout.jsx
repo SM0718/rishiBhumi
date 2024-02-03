@@ -27,27 +27,27 @@ function Checkout() {
   }, [])
 
 
-  const placeOrder = async() => {
-    try {
-      const data = await appwriteService.createOrder({
-        name: details.name,
-        address: details.address,
-        phone: details.phone,
-        email: details.email,
-        price: (product[0].price).toString(),
-        product: product[0].name,
-      })
-      if(data){
-        navigate("/success")
-      }
-    } catch (error) {
+  // const placeOrder = async() => {
+  //   try {
+  //     const data = await appwriteService.createOrder({
+  //       name: details.name,
+  //       address: details.address,
+  //       phone: details.phone,
+  //       email: details.email,
+  //       price: (product[0].price).toString(),
+  //       product: product[0].name,
+  //     })
+  //     if(data){
+  //       navigate("/success")
+  //     }
+  //   } catch (error) {
       
-    }
-  }
+  //   }
+  // }
 
-  const handelClick = () => {
-    placeOrder()
-  }
+  // const handelClick = () => {
+  //   placeOrder()
+  // }
   
 
   return (
@@ -74,12 +74,9 @@ function Checkout() {
         </div>
         
         <div className='flex flex-wrap justify-center gap-4 pb-4'>
-          <Button onClick={() => handelClick()} className={"w-[100px] h-10 p-2 bg-blue-500 rounded-xl"}>
-            Free COD
-          </Button>
-          <Button className={"w-auto h-10 p-2 bg-blue-500 rounded-xl"}>
+          <Button className={"w-auto h-10 p-2 bg-yellow-700 text-white rounded-xl"}>
             <Link
-            to={`whatsapp://send?phone=+919330032500&text=For%20${product[0].name}%20Payment!`}>
+            to={`whatsapp://send?phone=+919330032500&text=For%20${product[0].name}%20Payment!%20Amount:%20Rs%20${product[0].price}`}>
              Pay Using UPI Through Whatsapp
             </Link>
           </Button>

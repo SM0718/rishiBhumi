@@ -66,7 +66,10 @@ function Home() {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 1000,
+      autoplay: true,
+      speed: 1500,
+      autoplaySpeed: 3000,
+      pauseOnHover: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       nextArrow: <NextArrow />,

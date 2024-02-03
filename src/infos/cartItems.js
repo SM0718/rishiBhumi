@@ -2,91 +2,91 @@ export const cartItems = [
     {
         name: "Satyanarayan Pooja",
         pic: "./WeeklyPooja/1.jpg",
-        price: 251,
+        price: 501,
         slug: "satyanarayan-pooja"
     },
     {
         name: "Shani Graha Shanti Pooja",
         pic: "./WeeklyPooja/2.jpg",
-        price: 251,
+        price: 501,
         slug: "shani-graha-shanti-pooja"
     },
     {
         name: "Ganesh Pooja",
         pic: "./WeeklyPooja/3.webp",
-        price: 251,
+        price: 501,
         slug: "ganesh-pooja"
     },
     {
         name: "Shiv Pooja",
         pic: "./WeeklyPooja/4.jpg",
-        price: 251,
+        price: 501,
         slug: "shiv-pooja"
     },
     {
         name: "Baba Lokenath Pooja",
         pic: "./WeeklyPooja/5.jpg",
-        price: 251,
+        price: 501,
         slug: "baba-lokenath-pooja"
     },
     {
         name: "Shri Laxmi Pooja",
         pic: "./WeeklyPooja/6.jpg",
-        price: 251,
+        price: 501,
         slug: "shri-laxmi-pooja"
     },
     {
         name: "Radha Krishna Pooja",
         pic: "./WeeklyPooja/7.jpg",
-        price: 251,
+        price: 501,
         slug: "radha-krishna-pooja"
     },
     {
-        name: "Maha Mrityunjay Pooja",
+        name: "Gau Mata Pooja",
         pic: "./WeeklyPooja/8.jpg",
-        price: 251,
-        slug: "maha-mrityunjay-pooja"
+        price: 501,
+        slug: "gau-mata-pooja"
     },
     {
         name: "Maha Rudrabhishek Pooja",
         pic: "./WeeklyPooja/9.jpg",
-        price: 251,
+        price: 501,
         slug: "maha-rudrabhishek-pooja"
     },
     {
         name: "Hanuman Pooja",
         pic: "./WeeklyPooja/10.jpg",
-        price: 251,
+        price: 501,
         slug: "hanuman-pooja"
     },
     {
         name: "Mahalaxmi Aarti",
         pic: "./WeeklyPooja/11.jpg",
-        price: 251,
+        price: 501,
         slug: "mahalaxmi-aarti"
     },
     {
         name: "Maa Mangal Chandi Pooja",
         pic: "./WeeklyPooja/12.jpg",
-        price: 251,
+        price: 501,
         slug: "maa-mangal-chandi-pooja"
     },
     {
         name: "Sawaraswati Pooja",
         pic: "./WeeklyPooja/13.jpg",
-        price: 251,
+        price: 501,
         slug: "sawaraswati-pooja"
     },
     {
         name: "Navgraha Shanti Pooja",
         pic: "./WeeklyPooja/14.jpg",
-        price: 251,
+        price: 501,
         slug: "navgraha-shanti-pooja"
     },
     {
         name: "Kali Puja during Amavasya",
         pic: "./WeeklyPooja/15.jpg",
-        price: 251,
+        price: 501,
         slug: "kali-pooja-amavasya"
     },
     {

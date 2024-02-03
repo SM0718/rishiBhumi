@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 import authService from '../appwrite/auth'
 import {useNavigate} from 'react-router-dom'
 import {login} from '../store/authSlice'
@@ -14,13 +14,13 @@ function SignUp() {
     const [userId, setUserId] = useState("")
     const {register, handleSubmit} = useForm()
     const [toggleVerify, setToggleVerify] = useState(false)
+    
 
     const create = async(data) => {
         setError("")
         try{
             const userData = await authService.phoneLogin(data)
             if(userData) {
-                console.log(userData)
                 setUserId(userData)
                 setToggleVerify(true)
             }
@@ -31,9 +31,7 @@ function SignUp() {
 
     const verify = async(info) => {
         try {
-            console.log("Inside Verify", info, info.secretCode, userId)
-            const secretCode = `${info.first}${info.second}${info.third}${info.fourth}${info.fifth}${info.sixth}`
-            const userObj = {userId: userId, secretCode: secretCode}
+            const userObj = {userId: userId, secretCode: info.secretCode}
             const verifyNumber = await authService.phoneSession(userObj);
             if(verifyNumber){
                 const userData = await authService.getCurrentUser()
@@ -81,56 +79,22 @@ function SignUp() {
                 :
                 (<form onSubmit={handleSubmit(verify)} className='flex flex-col justify-center'>
                     <div className='w-1/2 mx-auto mb-2 flex justify-evenly gap-2'>
-                <Input  
-                        maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
-                        {...register("first", {
-                            required: true,
-                        })}
-                        />
-                <Input
-                        maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
-                        {...register("second", {
-                            required: true,
-                        })}
-                        />
-                <Input  
-                        maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
-                        {...register("third", {
-                            required: true,
-                        })}
-                        />
-                <Input
-                        maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
-                        {...register("fourth", {
-                            required: true,
-                        })}
-                        />
-                <Input  
-                        maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
-                        {...register("fifth", {
-                            required: true,
-                        })}
-                        />
-                <Input
-                        maxLength={1}
-                        className= "w-[36px] sm:w-[46px] h-[36px] sm:h-[46px] text-center mx-auto p-1 outline outline-2 outline-yellow-500 rounded-xl"
-                        {...register("sixth", {
-                            required: true,
-                        })}
-                        />
-                    </div>
+                     <Input
+                         maxLength={6}
+                         className= "w-[200px] h-10 text-center mx-auto p-1 outline outline-2 outline-yellow-500 focus:outline-yellow-800 rounded-xl"
+                         {...register("secretCode", {
+                             required: true,
+                         })}
+                         />
+                         
+                     </div>
                 
-                <Button type="submit" 
-                        className="w-auto px-6 py-2 mx-auto my-4 text-center border border-[#b0a178] hover:bg-[#b0a178] rounded-3xl font-bold"
-                        >
-                            Verify
-                        </Button>
-                </form>)
+                 <Button type="submit" 
+                         className="w-auto px-6 py-2 mx-auto my-4 text-center border border-[#b0a178] hover:bg-[#b0a178] rounded-3xl font-bold"
+                         >
+                             Verify
+                       </Button>
+                 </form>)
 }
         </div>
     </div>

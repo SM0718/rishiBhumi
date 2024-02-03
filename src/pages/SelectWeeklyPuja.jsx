@@ -30,8 +30,12 @@ function SelectWeeklyPuja() {
           
           <span className='my-2'>
             <Button onClick={() => handelCLick()} className={`w-full p-3 bg-[#B1A178] rounded-xl animate-bounce hover:bg-[#CCC0B0]`}>
-              Book Now for Rs 251
+              Book Now for Rs {product[0].price}
             </Button>
+          </span>
+
+          <span className='text-xl font-semibold'>
+            Upcomming {product[0].name} at - {product[0].timing}
           </span>
           
         </div>

@@ -16,8 +16,7 @@ function Blog() {
                     setLoader(false)
                 } else {
                     alert("New Predictions Are Being Uploaded")
-                }
-                
+                } 
             }
         } catch (error) {
             alert(error)
@@ -51,6 +50,14 @@ function Blog() {
                     </div>
                 )
             }
+
+                <div key="1" className='flex flex-col pb-4 leading-loose'>
+                    {/* Add The Topic Heading Inside the H1 Tag Below */}
+                        <h1 className='font-semibold text-2xl float-left pr-2'></h1>
+                    {/* Add The Topic Content Below */}
+                        <p></p>
+                    </div>
+
         </div>
     </div>
   )

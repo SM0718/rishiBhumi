@@ -29,37 +29,37 @@ function SelectCrystal() {
       Book Now for Rs {product[0].crystalPrice}
     </Button>
   </span>
-  <span>
-    <p>
+  <div>
+  <p>{product[0].crystalDesc}</p>
+  <br />
+  </div>
+  <div className='w-full md:w-3/4 flex flex-col justify-start'>
+<div className='w-full my-2'>
+  <h1 className='mb-2 text-xl'>Benefits:</h1>
+  <p className='w-full text-lg'>{product[0].crystalUses.first}</p>
+  <p className='w-full text-lg'>{product[0].crystalUses.second}</p>
+  <p className='w-full text-lg'>{product[0].crystalUses.third}</p>
+  <p className='w-full text-lg'>{product[0].crystalUses.fourth}</p>
+</div>
+
+</div>
+
+  
+</div>
+
+</div>
+<div className='w-5/6 mx-auto px-4 my-4'>
+    <h1>Disclamer</h1>
+    <p>If you choose to use a any crystal bracelet for its perceived benefits, it's essential to do so with an open mind and to rely on it as a complementary practice rather than a substitute for professional medical or psychological advice. Always consult with healthcare professionals for any health-related concerns.</p>
+  </div>
+<span>
+    <p className='text-center'>
       <b className='pr-1'>
         Contact For Bulk Order:-  
       </b>
        contact@rishibhumi.com
        </p>
      </span>
-  <div>
-  <p>{product[0].crystalDesc}</p>
-  <br />
-
-  <div>
-    <h1>Disclamer</h1>
-    <p>If you choose to use a any crystal bracelet for its perceived benefits, it's essential to do so with an open mind and to rely on it as a complementary practice rather than a substitute for professional medical or psychological advice. Always consult with healthcare professionals for any health-related concerns.</p>
-  </div>
-</div>
-</div>
-
-</div>
-
-<div className='w-full md:w-3/4 mx-auto flex flex-col justify-start gap-8 md:gap-2'>
-<div className='w-full my-2'>
-  <h1 className='mb-2 font-bold text-xl'>Benefits:</h1>
-  <p className='w-full text-xl'>{product[0].crystalUses.first}</p>
-  <p className='w-full text-xl'>{product[0].crystalUses.second}</p>
-  <p className='w-full text-xl'>{product[0].crystalUses.third}</p>
-  <p className='w-full text-xl'>{product[0].crystalUses.fourth}</p>
-</div>
-
-</div>
 
 
 

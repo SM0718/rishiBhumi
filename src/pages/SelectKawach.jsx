@@ -31,14 +31,15 @@ function SelectKawach() {
               Order for just Rs {product[0].price} {`(Free Delivery)`}
             </Button>
           </span>
-          <span>
-    <p>
-      <b className='pr-1'>
-        Contact For Bulk Order:-  
-      </b>
-       contact@rishibhumi.com
-       </p>
-     </span>
+
+          <div className='w-full md:w-3/4 flex flex-col justify-start gap-8 md:gap-2'>
+  <div className='w-full my-4'>
+  <h1 className='mb-2 font-bold text-xl'>Benefits:</h1>
+  <p className='w-full text-lg'>{product[0].kawachUse.first}</p>
+  <p className='w-full text-lg'>{product[0].kawachUse.second}</p>
+  <p className='w-full text-lg'>{product[0].kawachUse.third}</p>
+</div>
+          
 
           <span>
             <p className='my-2'>{product[0].kawachDesc}</p>
@@ -51,13 +52,14 @@ function SelectKawach() {
         </div>
       </div>
 
-      <div className='w-full md:w-3/4 mx-auto flex flex-col justify-start gap-8 md:gap-2'>
-  <div className='w-full my-4 mx-4'>
-  <h1 className='mb-2 font-bold text-xl'>Benefits:</h1>
-  <p className='w-full text-xl'>{product[0].kawachUse.first}</p>
-  <p className='w-full text-xl'>{product[0].kawachUse.second}</p>
-  <p className='w-full text-xl'>{product[0].kawachUse.third}</p>
-</div>
+      <span>
+    <p>
+      <b className='pr-1'>
+        Contact For Bulk Order:-  
+      </b>
+       contact@rishibhumi.com
+       </p>
+     </span>
 
 </div>
 
