@@ -25,7 +25,6 @@ function Login() {
                 navigate("/")
         }
       } catch (error) {
-        console.log(error)
         setError(error.message)
       }
     }
@@ -35,12 +34,6 @@ function Login() {
 
       <div className='w-5/6 h-auto md:h-full md:w-4/5 flex flex-col justify-evenly md:justify-center
          text-center mb-16'>
-
-        {/* <div className='w-1/2 mx-auto'>
-          <img className='w-full h-full' src='./zodiac-wheel.png'/>
-        </div> */}
-
-        {/* <div className='w-5/6 md:pl-4 h-full mx-auto flex flex-col justify-center text-center'> */}
 
           <div className='w-full h-auto my-4 flex flex-col justify-center'>
             <h1 className='text-6xl font-semibold pb-6'>Login To Your Account</h1>
@@ -64,9 +57,6 @@ function Login() {
                     }
                 })}
                 />
-                {/* </div>
-                
-                <div className='h-auto w-full md:mb-4 text-center'> */}
                  <Input
                  className= "w-1/2 p-3 bg-yellow-200 rounded-2xl"
                 type="password"
@@ -89,8 +79,6 @@ function Login() {
         </form>
           </div>
         
-
-      {/* </div> */}
       </div>
       
 

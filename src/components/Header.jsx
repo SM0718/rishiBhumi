@@ -8,29 +8,12 @@ import LogoutBtn from './LogoutBtn';
 
 function Header() {
 
-  // const [authStatus, setAuthStatus] = useState(false)
   const authStatus = useSelector((state) => state.auth.status)
   const [open, setOpen] = useState(false);
   const navigate = useNavigate()
   const toggleMenu = () => {
     setOpen(!open);
   };
-// const checkLoginStatus = async() => {
-//       try{
-//         const userData = await authService.getCurrentUser()
-//         if(userData) {
-//             setAuthStatus(true)
-//         }
-//       } catch(error) {
-//         alert(error.message)
-//       }
-      
-//     }
-//   useEffect(() => {
-//     checkLoginStatus()
-    
-//   }, [])
-  
 
   const headings = [
     {

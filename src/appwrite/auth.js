@@ -18,7 +18,6 @@ export class AuthService {
         try {
             const userAccount = await this.account.create(ID.unique(), email, password, name);
             if (userAccount) {
-                // call another method
                 return this.login({email, password});
             } else {
                return  userAccount;
@@ -38,29 +37,26 @@ export class AuthService {
 
     async phoneLogin({number}) {
         try {
-            console.log("Inside auth phone login: ", number)
             const sessionId = ID.unique();
             const sessionToken = await this.account.createPhoneSession(sessionId, number);
 
             if (sessionToken) {
-                console.log("Inside sessionToken:", sessionToken)
                 return sessionToken.userId;
             }
         } catch (error) {
-            console.log("Appwrite service :: phoneLogin :: error", error);
+            alert("Appwrite service :: phoneLogin :: error", error);
             throw error;
         }
     }
 
     async phoneSession({userId, secretCode}){
         try {
-            console.log("Inside phoneSession", userId, secretCode)
             const session = await this.account.updatePhoneSession(userId, secretCode)
             if(session){
                 return session
             }
         } catch (error) {
-            console.log("Appwrite serive :: phoneSession :: error", error);
+            alert("Appwrite serive :: phoneSession :: error", error);
         }
     }
 
@@ -69,7 +65,7 @@ export class AuthService {
         try {
             return await this.account.get();
         } catch (error) {
-            console.log("Appwrite serive :: getCurrentUser :: error", error);
+            alert("Appwrite serive :: getCurrentUser :: error", error);
         }
 
         return null;
@@ -80,7 +76,7 @@ export class AuthService {
         try {
             await this.account.deleteSessions();
         } catch (error) {
-            console.log("Appwrite serive :: logout :: error", error);
+            alert("Appwrite serive :: logout :: error", error);
         }
     }
 }

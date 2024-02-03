@@ -30,7 +30,7 @@ export class Service{
                 }
             )
         } catch (error) {
-            console.log("Appwrite serive :: createPost :: error", error);
+            alert("Appwrite serive :: createPost :: error", error);
         }
     }
 
@@ -48,7 +48,7 @@ export class Service{
                 }
             )
         } catch (error) {
-            console.log("Appwrite serive :: updatePost :: error", error);
+            alert("Appwrite serive :: updatePost :: error", error);
         }
     }
 
@@ -61,7 +61,7 @@ export class Service{
             )
             return true
         } catch (error) {
-            console.log("Appwrite serive :: deletePost :: error", error);
+            alert("Appwrite serive :: deletePost :: error", error);
             return false
         }
     }
@@ -74,7 +74,7 @@ export class Service{
                 slug
             )
         } catch (error) {
-            console.log("Appwrite serive :: getPost :: error", error);
+            alert("Appwrite serive :: getPost :: error", error);
             return false
         }
     }
@@ -89,7 +89,7 @@ export class Service{
                 ]
             )
         } catch (error) {
-            console.log("Appwrite serive :: getPosts :: error", error);
+            alert("Appwrite serive :: getPosts :: error", error);
             return false
         }
     }
@@ -104,7 +104,7 @@ export class Service{
                 ]
             )
         } catch (error) {
-            console.log("Appwrite serive :: getPosts :: error", error);
+            alert("Appwrite serive :: getPosts :: error", error);
             return false
         }
     }
@@ -125,20 +125,9 @@ export class Service{
                 }
             )
         } catch (error) {
-            console.log("Appwrite serive :: createOrder :: error", error);
+            alert("Appwrite serive :: createOrder :: error", error);
         }
     }
-
-    // async getAddress({documentId}){
-    //     try {
-    //         return await this.databases.getDocument(
-    //             conf.appwriteDatabaseId,
-
-    //         )
-    //     } catch (error) {
-            
-    //     }
-    // }
 }
 
 

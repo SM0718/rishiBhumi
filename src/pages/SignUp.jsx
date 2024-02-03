@@ -25,11 +25,12 @@ function SignUp() {
                 setToggleVerify(true)
             }
         } catch(error) {
-                alert(error.message)
+            setError(error.message)
         }
     }
 
     const verify = async(info) => {
+        setError("")
         try {
             const userObj = {userId: userId, secretCode: info.secretCode}
             const verifyNumber = await authService.phoneSession(userObj);
@@ -43,7 +44,7 @@ function SignUp() {
                 
             }
         } catch(error) {
-            alert(error.message)
+            setError(error.message)
         }
     }
 
@@ -88,6 +89,7 @@ function SignUp() {
                          />
                          
                      </div>
+                     {error && <p className="text-red-600 text-center font-bold text-lg my-8">{error}</p>}
                 
                  <Button type="submit" 
                          className="w-auto px-6 py-2 mx-auto my-4 text-center border border-[#b0a178] hover:bg-[#b0a178] rounded-3xl font-bold"
