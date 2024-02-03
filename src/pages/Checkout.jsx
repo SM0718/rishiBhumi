@@ -41,10 +41,29 @@ function Checkout() {
   //       navigate("/success")
   //     }
   //   } catch (error) {
+  // const placeOrder = async() => {
+  //   try {
+  //     const data = await appwriteService.createOrder({
+  //       name: details.name,
+  //       address: details.address,
+  //       phone: details.phone,
+  //       email: details.email,
+  //       price: (product[0].price).toString(),
+  //       product: product[0].name,
+  //     })
+  //     if(data){
+  //       navigate("/success")
+  //     }
+  //   } catch (error) {
       
   //   }
   // }
+  //   }
+  // }
 
+  // const handelClick = () => {
+  //   placeOrder()
+  // }
   // const handelClick = () => {
   //   placeOrder()
   // }
