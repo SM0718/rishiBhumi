@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <>
-    <header className='h-auto lg:h-30 w-full rounded-b-xl border-b-2 bg-gradient-to-r from-[#2F4F4F] to-[#3E5E5E] px-2 flex justify-between'>
+    <header className='h-auto lg:h-30 w-full rounded-b-xl border-b-2 px-2 flex justify-between'>
       <Logo className="my-auto"/>
 
       <ul className='w-3/5 hidden xl:flex justify-evenly my-auto'>
