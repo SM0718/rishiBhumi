@@ -21,7 +21,7 @@ function EPuja() {
     },
     {
       name: "Taraknath Temple",
-      img: "/Tarakeswar.jpg",
+      img: "./Tarakeswar.jpg",
       price: 1501,
       slug: "tarakeswar"
     },
