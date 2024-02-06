@@ -47,7 +47,7 @@ function SelectKawach() {
 
           <div>
             <h1>Disclamer</h1>
-            <p>If you choose to use a any crystal bracelet for its perceived benefits, it's essential to do so with an open mind and to rely on it as a complementary practice rather than a substitute for professional medical or psychological advice. Always consult with healthcare professionals for any health-related concerns.</p>
+            <p>If you choose to use a any kawach for its perceived benefits, it's essential to do so with an open mind and to rely on it as a complementary practice rather than a substitute for professional medical or psychological advice. Always consult with healthcare professionals for any health-related concerns.</p>
           </div>
         </div>
       </div>
