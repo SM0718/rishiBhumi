@@ -60,7 +60,7 @@ function EPuja() {
                 Book Now @ Rs {temple[0].price}
               </Button>
               <p>
-                Book an E-Puja from anywhere around the world. Simply select the temple, pay the fee and attend the puja through platforms like GMeet or Zoom. You can also book with us directly through <Link className='text-green-500 bg-green-200 rounded-lg px-1' to={`whatsapp://send?phone=+919330032500&text=For%20${temple[0].place}%20Booking!`}>Whatsapp</Link> too. 
+                You can also book with us directly through <Link className='text-green-500 bg-green-200 rounded-lg px-1' to={`whatsapp://send?phone=+919330032500&text=For%20${temple[0].place}%20Booking!`}>Whatsapp</Link> for more details. 
               </p>
             </div>
           </div>
