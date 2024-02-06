@@ -60,7 +60,7 @@ function Footer() {
           <h1 className='text-2xl font-semibold'>Contact Us</h1>
         </div>
         <div className='leading-loose'>
-          <p><b>Email:- </b><span className='text-white'>abhiseksabui@gmail.com</span></p>
+          <p><b>Email:- </b><span className='text-white'>contact@rishibhumi.com</span></p>
           <p><b>Phone No:- </b><span className='text-white'>9330032500</span></p>
           <p><b>Address:- </b><span className='text-white'>5, Words Institution Street, Kolkata - 700006</span></p>
 
