@@ -50,7 +50,7 @@ function SignUp() {
 
 
   return (
-    <div className='w-full h-[500px] py-10 flex flex-col justify-evenly gap-10 bg-center bg-no-repeat text-center' style={{backgroundImage: "url('./zodiac-wheel.png')"}}>
+    <div className='w-full h-[550px] py-10 flex flex-col justify-evenly gap-10 bg-center bg-no-repeat text-center' style={{backgroundImage: "url('./zodiac-wheel.png')"}}>
 
         <div className='w-full h-auto my-4 flex flex-col justify-center'>
             <h1 className='text-6xl font-semibold pb-6'>Login To Your Account</h1>
