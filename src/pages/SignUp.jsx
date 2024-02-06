@@ -63,7 +63,7 @@ function SignUp() {
                 (<form onSubmit={handleSubmit(create)} className='flex flex-col justify-center'>
                 
                 <Input
-                        label="Enter your Number"
+                        label="Enter your Number Followed By (+) and Country Code"
                         labelStyle = "font-bold mb-2 md:px-2 text-xl"
                         placeholder="Enter Your Number"
                         className= "w-1/2 md:w-[500px] mx-auto p-3 border-2 border-black rounded-2xl"
