@@ -60,7 +60,7 @@ function EPuja() {
                 Book Now @ Rs {temple[0].price}
               </Button>
               <p>
-                You can also book with us directly through <Link className='text-green-500 bg-green-200 rounded-lg px-1' to={`whatsapp://send?phone=+919330032500&text=For%20${temple[0].place}%20Booking!`}>Whatsapp</Link> for more details. 
+                Book a Mandir Puja from anywhere around the world. Simply contact us directly through <Link className='text-green-500 bg-green-200 rounded-lg px-1' to={`whatsapp://send?phone=+919330032500&text=For%20${temple[0].place}%20Booking!`}>Whatsapp</Link> and share your requirements.We will execute accordingly. 
               </p>
             </div>
           </div>
