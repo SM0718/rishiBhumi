@@ -52,9 +52,7 @@ function Checkout() {
         
         <div className='flex flex-wrap justify-center gap-4 pb-4'>
           <Button className={"w-auto h-10 p-2 bg-yellow-700 text-white rounded-xl"}>
-            <Link
-{/*  */}
-            to={"https://buy.stripe.com/test_cN28y46Mc5285nqcMM"}>
+            <Link to={"https://buy.stripe.com/test_cN28y46Mc5285nqcMM"}>
              Pay Using UPI Through Whatsapp
             </Link>
           </Button>
