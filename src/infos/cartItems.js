@@ -4,105 +4,105 @@ export const cartItems = [
         pic: "./WeeklyPooja/1.jpg",
         price: 501,
         slug: "satyanarayan-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Shani Graha Shanti Pooja",
         pic: "./WeeklyPooja/2.jpg",
         price: 501,
         slug: "shani-graha-shanti-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Ganesh Pooja",
         pic: "./WeeklyPooja/3.webp",
         price: 501,
         slug: "ganesh-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Shiv Pooja",
         pic: "./WeeklyPooja/4.jpg",
         price: 501,
         slug: "shiv-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Baba Lokenath Pooja",
         pic: "./WeeklyPooja/5.jpg",
         price: 501,
         slug: "baba-lokenath-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Shri Laxmi Pooja",
         pic: "./WeeklyPooja/6.jpg",
         price: 501,
         slug: "shri-laxmi-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Radha Krishna Pooja",
         pic: "./WeeklyPooja/7.jpg",
         price: 501,
         slug: "radha-krishna-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Gau Mata Pooja",
         pic: "./WeeklyPooja/8.jpg",
         price: 501,
         slug: "gau-mata-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Maha Rudrabhishek Pooja",
         pic: "./WeeklyPooja/9.jpg",
         price: 501,
         slug: "maha-rudrabhishek-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Hanuman Pooja",
         pic: "./WeeklyPooja/10.jpg",
         price: 501,
         slug: "hanuman-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Mahalaxmi Aarti",
         pic: "./WeeklyPooja/11.jpg",
         price: 501,
         slug: "mahalaxmi-aarti",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Maa Mangal Chandi Pooja",
         pic: "./WeeklyPooja/12.jpg",
         price: 501,
         slug: "maa-mangal-chandi-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Sawaraswati Pooja",
         pic: "./WeeklyPooja/13.jpg",
         price: 501,
         slug: "sawaraswati-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Navgraha Shanti Pooja",
         pic: "./WeeklyPooja/14.jpg",
         price: 501,
         slug: "navgraha-shanti-pooja",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "https://phon.pe/5vfqx5d8"
     },
     {
         name: "Kali Puja during Amavasya",
         pic: "./WeeklyPooja/15.jpg",
         price: 501,
         slug: "kali-pooja-amavasya",
-        paymentLink: "https://phon.pe/0dfsy9bm"
+        paymentLink: "hhttps://phon.pe/5vfqx5d8"
     },
     {
         name: "Rahu Pooja",
