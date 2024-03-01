@@ -32,7 +32,7 @@ function Blog() {
         <div className='w-full flex justify-between'>
         <div className='w-full h-0 my-auto border border-black'/>    
             <span className='flex gap-2 px-2'>
-                <p className='text-xl'>Predictions</p>
+                <p className='text-xl'>{`${day}/${month}/${year}`}</p>
             </span>
         <div className='w-full h-0 my-auto border border-black'/>
         </div>
