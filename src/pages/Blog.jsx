@@ -28,7 +28,7 @@ function Blog() {
     }, [])
     
   return (
-    <div className='w-full h-auto py-10'>
+    <div className='w-full h-auto py-10 px-2'>
         <div className='w-full flex justify-between'>
         <div className='w-full h-0 my-auto border border-black'/>    
             <span className='flex gap-2 px-2'>
