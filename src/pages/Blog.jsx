@@ -53,9 +53,9 @@ function Blog() {
 
                 <div key="1" className='flex flex-col pb-4 leading-loose'>
                     {/* Add The Topic Heading Inside the H1 Tag Below */}
-                        <h1 className='font-semibold text-2xl float-left pr-2'>Test Heading  one </h1>
+                        <h1 className='font-semibold text-2xl float-left pr-2'> </h1>
                     {/* Add The Topic Content Below */}
-                        <p>Test Body</p>
+                        <p></p>
                     </div>
 
         </div>
