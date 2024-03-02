@@ -42,7 +42,7 @@ function Blog() {
                 !loader? blog.map((item, index) => (
                     <>
                         {
-                        ((index+1)%13 === 0 || index===0)? <div className='w-full flex justify-between pb-4'>
+                        ((index+1)%13 === 0 || index===0)? <div className='w-full flex justify-between pb-4 mt-2'>
                                                 <div className='w-full h-0 my-auto border border-black'/>    
                                                     <span className='flex gap-2 px-2'>
                                                         <BlogDate date={item.$createdAt}/>
