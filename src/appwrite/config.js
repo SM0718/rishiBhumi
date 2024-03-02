@@ -94,13 +94,13 @@ export class Service{
         }
     }
 
-    async getBlogData(date){
+    async getBlogData(){
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteBlogCollectionId,
                 [
-                    Query.equal("date", date)
+                    Query.orderDesc("date")
                 ]
             )
         } catch (error) {
