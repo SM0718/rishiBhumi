@@ -12,7 +12,6 @@ function Blog() {
             if(data) {
                 if(data.total > 0) {
                     setBlog(data.documents);
-                    // console.log(blog)
                     setLoader(false)
                 } else {
                     alert("New Predictions Are Being Uploaded")
@@ -33,7 +32,6 @@ function Blog() {
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
         const formattedDate = (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + year;
-        console.log(formattedDate)
         return <span>{`${formattedDate}`}</span>
     }
     
