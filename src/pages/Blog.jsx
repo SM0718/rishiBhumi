@@ -12,6 +12,7 @@ function Blog() {
             if(data) {
                 if(data.total > 0) {
                     setBlog(data.documents);
+                    // console.log(blog)
                     setLoader(false)
                 } else {
                     alert("New Predictions Are Being Uploaded")
@@ -32,7 +33,8 @@ function Blog() {
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
         const formattedDate = (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + year;
-        return <p className='text-xl'>{`${formattedDate}`}</p>
+        console.log(formattedDate)
+        return <span>{`${formattedDate}`}</span>
     }
     
   return (
@@ -41,19 +43,10 @@ function Blog() {
             {
                 !loader? blog.map((item, index) => (
                     <>
-                        {
-                        ((index+1)%13 === 0 || index===0)? <div className='w-full flex justify-between pb-4 mt-2'>
-                                                <div className='w-full h-0 my-auto border border-black'/>    
-                                                    <span className='flex gap-2 px-2'>
-                                                        <BlogDate date={item.$createdAt}/>
-                                                    </span>
-                                <div className='w-full h-0 my-auto border border-black'/>
-                                            </div> : <></>
-                        }
                     
 
                     <div key={item.raashi} className='flex flex-col pb-4 leading-loose'>
-                        <h1 className='font-semibold text-2xl float-left pr-2'>{item.raashi}:</h1>
+                        <h1 className='font-semibold text-2xl float-left pr-2'>{`${item.raashi} `}(Published on: <BlogDate date={item.$createdAt}/>):</h1>
                         <p>{item.predictions}</p>
                     </div>
                     </>
