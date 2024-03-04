@@ -5,6 +5,7 @@ function Blog() {
     const [blog, setBlog] = useState([])
     const [loader, setLoader] = useState(true)
     
+<h3>	মেষ রাশি:	</h3>	<p>	 শুভ সময়, পড়াশুনায় শুভ, কেরিয়ারএ উন্নতি, নতুন সুযোগ আসবে, ভাই বোন পাড়া প্রতিবেশী দের সাথে সুসম্পর্ক , মানসিক চাঞ্চল্য কেটে সুখ আসবে। অতীতের স্মৃতি আসবে ফিরে।  	</p>
 
     const blogData = async() => {
         try {
