@@ -45,10 +45,10 @@ function Blog() {
                     <h2>	মেষ রাশি:	</h2>
                     <p>	 শুভ সময়, পড়াশুনায় শুভ, কেরিয়ারএ উন্নতি, নতুন সুযোগ আসবে, ভাই বোন পাড়া প্রতিবেশী দের সাথে সুসম্পর্ক , মানসিক চাঞ্চল্য কেটে সুখ আসবে। অতীতের স্মৃতি আসবে ফিরে।  	</p>
                         
-                    <!-- <div key={item.raashi} className='flex flex-col pb-4 leading-loose'>
+                    <div key={item.raashi} className='flex flex-col pb-4 leading-loose'>
                         <h1 className='font-semibold text-2xl float-left pr-2'>{`${item.raashi} `}(Published on: <BlogDate date={item.$createdAt}/>):</h1>
                         <p>{item.predictions}</p>
-                    </div> -->
+                    </div>
                     </>
                     
                 )) : (
