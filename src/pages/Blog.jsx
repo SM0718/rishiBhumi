@@ -42,8 +42,8 @@ function Blog() {
             
                     <>     
                     <div className='flex flex-col pb-4 leading-loose'>
-                        <h1 className='font-semibold text-2xl float-left pr-2'></h1>
-                        <p></p>
+                        <h1 className='font-semibold text-2xl float-left pr-2'> মেষ রাশি  </h1>
+                        <p> শুভ নয়। মানসিক চাপ, শারীরিক অসুস্থতা। তা সত্বেও রিওয়ার্ড </p>
                     </div>
                     </>
                     
