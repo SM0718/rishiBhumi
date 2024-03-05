@@ -42,6 +42,8 @@ function Blog() {
             
                     <>     
                     <div className='flex flex-col pb-4 leading-loose'>
+                      <h1 className='font-semibold text-2xl float-center pr-3'>   Ajker Rashifal: বাঙালি দৈনিক রাশিফল - 5 March 2024 </h1>
+
                          <h1 className='font-semibold text-2xl float-left pr-2'>	মেষ রাশি 	</h1>	<p>	 শুভ নয়। মানসিক চাপ, শারীরিক অসুস্থতা। তা সত্বেও রিওয়ার্ড -  অ্যাওয়ার্ড পাবার দিন। পড়াশুনায় ভালো, কম্পিটিটিভ পরীক্ষায় ভালো দিন। যাত্রায় শুভ নয়। পিতার শারীরিক অসুস্থতা।	</p>
                          <h1 className='font-semibold text-2xl float-left pr-2'>	বৃষ রাশি 	</h1>	<p>	 শুভ নয়। মানসিক দুশ্চিন্তা। মানসিক চাপ, দায়িত্ত্ব বাড়বে। অপমান। প্রেম -  প্রীতি -  ভালোবাসায় সুখ কম। হঠাৎ অর্থ প্রাপ্তি আছে। যাত্রা অশুভ।	</p>
                          <h1 className='font-semibold text-2xl float-left pr-2'>	মিথুন রাশি 	</h1>	<p>	  ব্যবসা ও রিটেল সার্ভিস এর জন্য ভালো l প্রেম প্রীতি -  ভালোবাসা শুভ। বাড়ির জন্য একটু দুশ্চিন্তা থাকবে। মানসিক থেকে অবসাদ হতে পারে। পড়াশুনায় বাধা।	</p>
