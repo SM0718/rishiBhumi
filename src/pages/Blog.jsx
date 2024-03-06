@@ -42,7 +42,7 @@ function Blog() {
             
                     <>     
                     <div className='flex flex-col pb-4 leading-loose'>
-                      <h1  className='font-semibold text-2xl float-left pr-2'>   Ajker Rashifal: বাঙালি দৈনিক রাশিফল - 6 March 2024 </h1>
+                      <h1  className='font-semibold text-2xl float-left pr-3'> Ajker Rashifal: বাঙালি দৈনিক রাশিফল - 6 March 2024 </h1>
                        
 
                          		 <h1 className='font-semibold text-2xl float-left pr-2'>	মেষ রাশি 	</h1>	<p>	 দিনের বেলা খুব শুভ নয়, রাতের বেলা শুভ। কেরিয়ার এ উন্নতি, টাকা পয়সা আসবে। বাড়িতে কুটুম আসবে। নতুন আসবাবপত্র বাড়িতে আসতে পারে। যাত্রা শুভ।  	</p>
