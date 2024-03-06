@@ -43,7 +43,7 @@ function Blog() {
                     <>     
                     <div className='flex flex-col pb-4 leading-loose'>
                       <h1  className='font-semibold text-2xl float-left pr-3'> Ajker Rashifal: বাঙালি দৈনিক রাশিফল - 6 March 2024 </h1>
-                       
+                       <br>
 
                          		 <h1 className='font-semibold text-2xl float-left pr-2'>	মেষ রাশি 	</h1>	<p>	 দিনের বেলা খুব শুভ নয়, রাতের বেলা শুভ। কেরিয়ার এ উন্নতি, টাকা পয়সা আসবে। বাড়িতে কুটুম আসবে। নতুন আসবাবপত্র বাড়িতে আসতে পারে। যাত্রা শুভ।  	</p>
                                  <h1 className='font-semibold text-2xl float-left pr-2'>	বৃষ রাশি 	</h1>	<p>	 যে চাপটা দুদিন ধরে ছিল, সেটা কমবে। সঠিক সিদ্ধান্ত দিনের  বেলা না নিয়ে রাতের বেলা নিন। যাত্রায় শুভ, পাড়া প্রতিবেশী দের শুভ বার্তালাপ দেখাচ্ছে। ফিস্ট হতে পারে। প্রেম রোমান্স এ শুভ রাতে। ভাগ্যে উন্নতি। 	</p>
