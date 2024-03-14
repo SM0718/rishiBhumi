@@ -43,7 +43,7 @@ function Blog() {
                     <>     
                     <div className='flex flex-col pb-4 leading-loose'>
 
-                       			      <h1 className='font-semibold text-3xl float-left pr-2'>হোলি বা দোল উৎসব</h1>
+  <h1 className='font-semibold text-2xl float-left pr-2'>হোলি বা দোল উৎসব</h1>
   <h1 className='font-semibold text-2xl float-left pr-2'>*24 03 2024 - 09:43 am to 25 03 2024 - 11: 48 am* </h1>
 
 <p><h3>চলুন জেনে নিই এর মাহাত্ম্য, পেছনের ইতিহাস।</h3>
