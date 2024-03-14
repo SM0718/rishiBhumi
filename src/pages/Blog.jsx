@@ -60,8 +60,8 @@ function Blog() {
 
                
                     
-                    <hr>
-                    <br>                    
+                    <h1></h1>
+                                        
                     <h1 className='font-semibold text-3xl float-left pr-2'>হোলি বা দোল উৎসব</h1>
  
                     </div>
