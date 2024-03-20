@@ -62,3 +62,7 @@ function Blog() {
 }
 
 export default Blog
+
+
+    <h1  className='font-semibold text-2xl float-left pr-3'> Ajker Rashifal: বাঙালি দৈনিক রাশিফল - 20 March 2024 </h1>	
+
