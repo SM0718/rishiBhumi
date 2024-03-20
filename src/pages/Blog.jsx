@@ -36,7 +36,7 @@ function Blog() {
     }
     
   return (
-    <div className='w-full h-auto py-2 px-2'>
+    <div>
         
 
             
